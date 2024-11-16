@@ -1,0 +1,62 @@
+{
+	"name": "emoogle-emoji-search-engine",
+	"version": "0.0.0",
+	"description": "The best emoji search engine for finding emojis. Created by and powers Emoogle, the best emoji desktop app for emoji fans.",
+	"keywords": [
+		"emoji",
+		"emoji search engine",
+		"emoji keywords",
+		"Emoogle"
+	],
+	"homepage": "https://github.com/xitanggg/emoogle-emoji-search-engine",
+	"bugs": {
+		"url": "https://github.com/xitanggg/emoogle-emoji-search-engine/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xitanggg/emoogle-emoji-search-engine.git"
+	},
+	"author": "Xitang Zhao <hello@emoogle.org> (https://emoogle.org/)",
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"files": [
+		"dist"
+	],
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": "./dist/index.js",
+			"default": "./dist/index.cjs"
+		}
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest run",
+		"format": "prettier --write .",
+		"check-format": "prettier --check .",
+		"lint": "tsc",
+		"ci": "npm run build && npm run check-format && npm run lint && npm run test",
+		"local-release": "changeset version && changeset publish",
+		"prepublishOnly": "npm run ci",
+		"glossary": "tsx ./scripts/create-emoji-glossary",
+		"stats": "tsx ./scripts/print-emoji-stats",
+		"search": "tsx ./scripts/search-emojis-cli",
+		"csv": "tsx ./scripts/archive/create-emoji-keywords-csv",
+		"------": "Below are some archived scripts to generate the initial list of emoji keywords",
+		"create-unicode-emoji-keywords": "tsx ./scripts/archive/create-unicode-emoji-keywords",
+		"create-cldr-emoji-keywords": "tsx ./scripts/archive/create-cldr-emoji-keywords",
+		"compare": "tsx ./scripts/archive/compare-emoji-keywords"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.9",
+		"@types/node": "^22.9.0",
+		"cli-progress": "^3.12.0",
+		"json-stringify-pretty-compact": "^4.0.0",
+		"prettier": "^3.3.3",
+		"tsup": "^8.3.5",
+		"tsx": "^4.19.2",
+		"typescript": "^5.6.3",
+		"vitest": "^2.1.4"
+	}
+}
