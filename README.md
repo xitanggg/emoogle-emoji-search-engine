@@ -10,7 +10,7 @@ It is created by and powers [Emoogle](https://www.emoogle.org/), the best emoji 
 
 ## ✨Features
 
-- 🗃️World's largest emoji keywords database with 5,400+ unique keywords for 1,872 emojis in ~200kb bundle size
+- 🗃️World's largest emoji keywords database with 5,400+ unique keywords for 1,872 emojis in ~60kb bundle size (gzipped)
 - 🏆Advanced ranking algorithm with 10+ rules to sort most relevant results first
 - ⚡Blazingly fast search-as-you-type experience (~10ms on Intel i7 @ 2.6GHz, ~5ms on Apple M2)
 - ⚙️Customizable options to personalize search experience
