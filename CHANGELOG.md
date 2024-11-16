@@ -1,5 +1,11 @@
 # emoogle-emoji-search-engine
 
+## 1.0.1
+
+### Patch Changes
+
+- c496f79: Update README to use gzipped bundle size
+
 ## 1.0.0
 
 ### Major Changes
