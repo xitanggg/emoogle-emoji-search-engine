@@ -6,7 +6,7 @@ It is created by and powers [Emoogle](https://www.emoogle.org/), the best emoji 
 
 <img src="https://i.ibb.co/cbbsynq/emoogle-emoji-picker.gif" alt="Emoogle Emoji Picker" width="298"/>
 
-(Demo with the [Emoogle Emoji Picker](https://github.com/xitanggg/emoogle-emoji-picker))
+(Demo with the [Emoogle Emoji Picker](https://github.com/xitanggg/emoogle-emoji-picker). Demo link: [emoogle.org/emoji-search](https://www.emoogle.org/emoji-search))
 
 ## ✨Features
 
