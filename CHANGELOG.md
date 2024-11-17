@@ -1,5 +1,11 @@
 # emoogle-emoji-search-engine
 
+## 1.0.2
+
+### Patch Changes
+
+- 4fd1eab: Update README with demo link
+
 ## 1.0.1
 
 ### Patch Changes
